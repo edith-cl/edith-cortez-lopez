@@ -1,4 +1,4 @@
-<html>
+<html lang = "en">
   <head>
     <h1> Edith-Cortez-Lopez </h1>
   </head>
