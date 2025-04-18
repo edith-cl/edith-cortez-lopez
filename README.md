@@ -12,7 +12,7 @@
       color: black;
       text-align: center; 
       display: inline-block;
-      padding: 15xp 25xp;
+      padding: 20xp 30xp;
       background-color: rgb(166, 194, 222);
     }
   a:hover, a:active {
