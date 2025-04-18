@@ -4,12 +4,19 @@
   <style> 
   h2 { 
       background-color: rgb(166, 194, 222);
-      padding:
       text-align: center; 
   }
   p  {
       background-color: rgb(166, 194, 222);>
   }
+  a:link, a:visited {
+       color: black;
+       text-align: center; 
+       display: inline-block;
+    }
+  a:hover, a:active {
+    background-color: rgb(166, 194, 222);
+    }
   </style>
   </head>
     
