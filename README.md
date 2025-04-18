@@ -4,6 +4,7 @@
   h2 { 
       background-color: rgb(166, 194, 222);
       border: 10px <style=color: rgb(166, 194, 222)>;
+      text-align: center; 
   }
   p  {
       background-color: rgb(166, 194, 222);>
