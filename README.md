@@ -1,6 +1,6 @@
 <html>
   <head>
-      <title> "Edith CL" </title>
+      <title> Edith Cortez Lopez </title>
   </head>
   <style> 
   h2 { 
