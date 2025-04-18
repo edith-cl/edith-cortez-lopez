@@ -24,5 +24,6 @@
     <h2> This is a heading</h2>
     <p> This is a paragraph.</p>
     <p> This is the second paragraph.</p>
+    <a href="default.asp" target="_blank">Resume</a>
   </body>
 </html>
