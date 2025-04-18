@@ -21,6 +21,7 @@
   </head>
     
   <body style="background-color:rgb(234, 237, 237);">
+    <title> Edith Cortez Lopez </title>
     <h2> This is a heading</h2>
     <p> This is a paragraph.</p>
     <p> This is the second paragraph.</p>
