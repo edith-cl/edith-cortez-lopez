@@ -12,6 +12,7 @@
        color: black;
        text-align: center; 
        display: inline-block;
+    padding: 15xp 25xp;
     }
   a:hover, a:active {
     background-color: rgb(166, 194, 222);
