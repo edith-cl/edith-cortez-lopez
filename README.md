@@ -2,7 +2,7 @@
   <head>
     <h1> Edith-Cortez-Lopez </h1>
   </head>
-  <body style="background-color:rgb(205, 230, 235);">
+  <body style="background-color:rgb(248, 231, 209);">
     <h2> This is a heading</h2>
     <p> This is a paragraph.</p>
     <p> This is the second paragraph.</p>
