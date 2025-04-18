@@ -3,7 +3,7 @@
   <style> 
   h2 { 
       background-color: rgb(166, 194, 222);
-      border: 3px <style=color: rgb(166, 194, 222)>;
+      border: 10px <style=color: rgb(166, 194, 222)>;
   }
   p  {
       background-color: rgb(166, 194, 222);>
