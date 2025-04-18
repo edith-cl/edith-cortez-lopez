@@ -1,6 +1,5 @@
 <html>
   <head>
-    <! Adding color boxes to the header and paragraph>
   <style> 
   h2 { 
       background-color: rgb(166, 194, 222);
