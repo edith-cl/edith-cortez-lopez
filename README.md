@@ -1,13 +1,13 @@
 <html>
   <head>
-    <style> 
-    h2 { 
-      style="background-color: rgb(173, 211, 230);">
-    }
-    p  {
-       style="background-color: rgb(173, 211, 230);">
-    }
-    </style>
+  <style> 
+  h2 { 
+      background-color: rgb(173, 211, 230);>
+  }
+  p  {
+      background-color: rgb(173, 211, 230);>
+  }
+  </style>
   </head>
     
   <body style="background-color:rgb(230, 217, 203);">
