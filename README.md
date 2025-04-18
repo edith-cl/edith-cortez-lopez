@@ -2,8 +2,8 @@
   <head>
     <h1> Edith-Cortez-Lopez </h1>
   </head>
-  <body>
-    <h1> This is a heading</h1>
+  <body style="background-color:blue;">
+    <h2> This is a heading</h2>
     <p> This is a paragraph.</p>
     <p> This is the second paragraph.</p>
   </body>
