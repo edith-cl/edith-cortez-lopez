@@ -6,13 +6,14 @@
       text-align: center; 
   }
   p  {
-      background-color: rgb(166, 194, 222);>
+      background-color: rgb(166, 194, 222);
   }
   a:link, a:visited {
-       color: black;
-       text-align: center; 
-       display: inline-block;
-    padding: 15xp 25xp;
+      color: black;
+      text-align: center; 
+      display: inline-block;
+      padding: 15xp 25xp;
+      background-color: rgb(166, 194, 222);
     }
   a:hover, a:active {
     background-color: rgb(166, 194, 222);
