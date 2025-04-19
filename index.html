@@ -12,12 +12,13 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: flex-start; /* Align items along the cross axis */
+            align-items: stretch; /* Align items along the cross axis */
             justify-content: space-between; /* Adjust space between items */
         }
 
         header {
             flex: 1; /* Takes 1 part of the space */
+            min-width: 30%;
             background-color: rgb(68, 112, 173);
             padding: 10px;
             color: white; /* Better readability */
@@ -27,9 +28,10 @@
             flex: 3; /* Takes 3 parts of the space */
             background-color: rgb(166, 194, 222);
             padding: 10px;
+            min-width: 60%;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 400px) {
             .layout {
                 flex-direction: column !important;/* Stack items vertically */
                 padding: 0;
