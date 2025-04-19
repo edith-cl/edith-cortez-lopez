@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Edith Cortez Lopez </title>
+    <title>Edith Cortez Lopez</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
             box-sizing: border-box;
         }
-        .body {
+
+        body {
             margin: 0;
             display: flex;
             height: 100vh;
-            overflow: hidden;
+            overflow: hidden; /* Prevent body scrolling */
             background-color: rgb(234, 237, 237);
         }
 
         header {
-            width: 250px;
+            width: 250px; /* Fixed width for the header */
             background-color: rgb(68, 112, 173);
+            color: white;
             padding: 20px;
-            color: white; /* Better readability */
             box-sizing: border-box;
             position: fixed;
             left: 0;
             top: 0;
             bottom: 0;
-            overflow-y: auto;
-            align-items: center;
+            overflow-y: auto; /* Allow scrolling in the header if needed */
         }
 
         .content {
-            margin-left: 250px;
+            margin-left: 250px; /* Offset for the header */
             padding: 20px;
             flex: 1;
-            overflow-y: auto;
-        }
-
-        article {
-            background-color: rgb(166, 194, 222);
-            padding: 10px;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
+            overflow-y: auto; /* Enable scrolling for the content */
         }
 
         .image-grid-container {
@@ -56,17 +46,17 @@
 
         footer {
             text-align: center;
-            gap: 10px
+            padding: 10px;
         }
 
         a:link, a:visited {
             background-color: transparent;
-            color: white
+            color: white;
         }
 
-        a:hover, a: active {
+        a:hover, a:active {
             background-color: transparent;
-            color: blue
+            color: blue;
         }
 
         img {
@@ -77,48 +67,45 @@
 
         @media (max-width: 800px) {
             body {
-                flex-direction: column !important;/* Stack items vertically */
-                overflow: auto;
+                flex-direction: column;
+                overflow: auto; /* Allow body scrolling on smaller devices */
             }
+
             header {
-                position: static;
-                width: 100%; /* Full width for smaller devices */
+                position: static; /* Remove fixed positioning */
+                width: 100%;
                 height: auto;
             }
+
             .content {
                 margin-left: 0;
             }
         }
     </style>
 </head>
-
-<body style="background-color:rgb(234, 237, 237);">
+<body>
     <header>
         <h1>Edith Cortez Lopez</h1>
     </header>
-
-    <div class="content"> 
+    
+    <div class="content">
         <article>
             <h2>This is a heading</h2>
-            <div>
-                <p>This is the first paragraph.</p>
-            </div>
+            <p>This is the first paragraph.</p>
         </article>
 
         <article>
-              <div class="image-grid-container">
-                   <div>
-                      <a href="https://substack.com/@edithcl">
-                          <img src="substack.png" alt="Substack">
-                      </a>
-                  </div>
-                  <div>
-                      <h2> Substack </h2>
-                      <p> What started as a way for me to gather my thoughts on the
-                          morning news is slowly evolving into independent research on policy,
-                      industry, and markets. These pieces of work are laying the foundation for a 
-                      future research paper.</p>
-                  </div>
+            <div class="image-grid-container">
+                <div>
+                    <a href="https://substack.com/@edithcl">
+                        <img src="substack.png" alt="Substack">
+                    </a>
+                </div>
+                <div>
+                    <h2>Substack</h2>
+                    <p>What started as a way for me to gather my thoughts on the morning news is slowly evolving into independent research on policy, industry, and markets. These pieces of work are laying the foundation for a future research paper.</p>
+                </div>
+            </div>
         </article>
 
         <article>
@@ -129,26 +116,20 @@
                     </a>
                 </div>
                 <div>
-                    <h2> Goodreads </h2>
-                    <p> Aside from reading the Wall Street Journal and staying current with the
-                        news, I love immersing myself in the written works of others, whether 
-                        fiction or non-fiction, as a way to expand my perspective.</p>
+                    <h2>Goodreads</h2>
+                    <p>Aside from reading the Wall Street Journal and staying current with the news, I love immersing myself in the written works of others, whether fiction or non-fiction, as a way to expand my perspective.</p>
                 </div>
+            </div>
         </article>
     </div>
-    
-<br>
-    
-<footer>
-    <div class="grid-container">
-        <div style="background-color: rgb(166, 194, 222);">
-            <a href="default.asp" target="_blank"> Phone </a>
+
+    <footer>
+        <div>
+            <a href="default.asp" target="_blank">Phone</a>
         </div>
-        
-        <div style="background-color: rgb(166, 194, 222);">
-            <a href="mailto:ecortez0119@gmail.com"> Email </a>
+        <div>
+            <a href="mailto:ecortez0119@gmail.com">Email</a>
         </div>
-</footer>
-        
+    </footer>
 </body>
 </html>
