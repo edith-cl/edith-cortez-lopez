@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Edith Cortez Lopez </title>
+    <title>Edith Cortez Lopez</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
             box-sizing: border-box;
         }
-        .layout {
+
+        body {
+            margin: 0;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: stretch; /* Align items along the cross axis */
-            justify-content: space-between; /* Adjust space between items */
-            gap: 10px
+            flex-direction: column;
+            background-color: rgb(234, 237, 237);
         }
 
         header {
-            flex: 1; /* Takes 1 part of the space */
-            min-width: 30%;
+            width: 250px; /* Fixed width for the header */
             background-color: rgb(68, 112, 173);
+            color: white;
             padding: 10px;
-            color: white; /* Better readability */
-            justify-content: center;
-            align-items: center;
+            box-sizing: border-box;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto; /* Allow scrolling in the header if needed */
         }
 
-        article {
-            flex: 3; /* Takes 3 parts of the space */
-            background-color: rgb(166, 194, 222);
-            padding: 10px;
-            min-width: 60%;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
+        .content {
+            margin-left: 250px; /* Offset for the header */
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto; /* Enable scrolling for the content */
         }
 
         .image-grid-container {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             gap: 10px;
+            margin-left: 10px;
         }
 
         footer {
             text-align: center;
-            gap: 10px
+            padding: 10px;
+            background-color: rgb(68, 112, 173);
         }
 
         a:link, a:visited {
             background-color: transparent;
-            color: white
+            color: white;
         }
 
-        a:hover, a: active {
+        a:hover, a:active {
             background-color: transparent;
-            color: blue
+            color: blue;
         }
 
         img {
@@ -66,55 +65,58 @@
             height: 50px;
             object-fit: cover;
         }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .blue {
+            background-color: rgb(166, 194, 222);
+        }
 
         @media (max-width: 800px) {
-            .layout {
-                flex-direction: column !important;/* Stack items vertically */
-                padding: 0;
-                margin: 1;
+            body {
+                flex-direction: column;
+                overflow: auto; /* Allow body scrolling on smaller devices */
             }
-            header, 
-            article {
-                width: 100%; /* Full width for smaller devices */
-                margin: 0; /* Remove external margins */
-                min-width: 0; /* Prevent width conflicts */
+
+            header {
+                position: static; /* Remove fixed positioning */
+                width: 100%;
+                height: auto;
+            }
+
+            .content {
+                margin-left: 0;
             }
         }
     </style>
 </head>
+<body>
+    <header>
+        <h1>Edith Cortez Lopez</h1>
+        <p><a href="mailto:ecortez0119@gmail.com"> Email </a>
+        </p>
+    </header>
+    
+    <div class="content">
 
-<body style="background-color:rgb(234, 237, 237);">
-
-<section>
-    <div class="layout">
-        <header>
-            <h1>Edith Cortez Lopez</h1>
-        </header>
-        
-        <article>
-            <h2>This is a heading</h2>
-            <div>
-                <p>This is the first paragraph.</p>
+        <article class="blue">
+            <div class="image-grid-container">
+                <div>
+                    <a href="https://substack.com/@edithcl">
+                        <img src="substack.png" alt="Substack">
+                    </a>
+                </div>
+                <div>
+                    <h2>Substack</h2>
+                    <p>What started as a way for me to gather my thoughts on the morning news is slowly evolving into independent research on policy, industry, and markets. These pieces of work are laying the foundation for a future research paper.</p>
+                </div>
             </div>
         </article>
-
-        <article>
-              <div class="image-grid-container">
-                   <div>
-                      <a href="https://substack.com/@edithcl">
-                          <img src="substack.png" alt="Substack">
-                      </a>
-                  </div>
-                  <div>
-                      <h2> Substack </h2>
-                      <p> What started as a way for me to gather my thoughts on the
-                          morning news is slowly evolving into independent research on policy,
-                      industry, and markets. These pieces of work are laying the foundation for a 
-                      future research paper.</p>
-                  </div>
-        </article>
-
-        <article>
+<br>
+        <article class="blue">
             <div class="image-grid-container">
                 <div>
                     <a href="https://www.goodreads.com/user/show/184974709-edith-cortez-lopez">
@@ -122,27 +124,21 @@
                     </a>
                 </div>
                 <div>
-                    <h2> Goodreads </h2>
-                    <p> Aside from reading the Wall Street Journal and staying current with the
-                        news, I love immersing myself in the written works of others, whether 
-                        fiction or non-fiction, as a way to expand my perspective.</p>
+                    <h2>Goodreads</h2>
+                    <p>Aside from reading the Wall Street Journal and staying current with the news, I love immersing myself in the written works of others, whether fiction or non-fiction, as a way to expand my perspective.</p>
                 </div>
+            </div>
         </article>
     </div>
-</section>
-
-<br>
     
-<footer>
-    <div class="grid-container">
-        <div style="background-color: rgb(166, 194, 222);">
-            <a href="default.asp" target="_blank"> Phone </a>
+    <footer>
+        <div class="grid-container">
+            <div>
+                <a href="index.html"> About </a>
         </div>
-        
-        <div style="background-color: rgb(166, 194, 222);">
-            <a href="mailto:ecortez0119@gmail.com"> Email </a>
+        <div>
+             <a href="homepage.html"> Projects </a>
         </div>
-</footer>
-        
+    </footer>
 </body>
 </html>
