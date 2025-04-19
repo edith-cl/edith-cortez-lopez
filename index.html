@@ -1,26 +1,55 @@
 <!DOCTYPE html>
+/* setting the language to english*/
 <html lang="en">
+
+/*setting the title to name and*/
   <head>
       <title> Edith Cortez Lopez </title>
       <meta charset="utf-8">
+    /* setting the page to configure with device*/
       <Meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <style> 
+    /*setting style for the header section*/
   .header1 {
     color: black;
-    text-align: left;
+    text-align: center;
     padding: 10px;
+    background-color: rgb(68, 112, 173);
   }
-  .header2 { 
+    
+    /*setting the introduction section*/
+  .Intro { 
+      -webkit-flex:3;
+      -ms-flex: 3;
+      flex: 3;
       background-color: rgb(166, 194, 222);
-      text-align: center; 
-      font-size:vw
+      text-align: left; 
+      padding: 10px;
   }
-  .paragraph1  {
-      background-color: rgb(166, 194, 222);
+    
+    /*container for flexboxes*/
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    /* setting the footer with links to top sections*/    
+  .links  {
+      -webkit-flex:1;
+      -ms-flex:1;
+      flex:1;
       font-size:vw
+      padding: 15px;
   }
+
+  /* setting the inside of the footer*/
+    links ul {
+      list-style-type: none;
+      padding:0 ;
+    }
+    
   a:link, a:visited {
       color: black;
       text-align: center; 
