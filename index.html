@@ -64,6 +64,11 @@
             height: 50px;
             object-fit: cover;
         }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
 
         @media (max-width: 800px) {
             body {
@@ -122,13 +127,15 @@
             </div>
         </article>
     </div>
-
+    
     <footer>
-        <div>
-            <a href="default.asp" target="_blank">Phone</a>
+        <div class="grid-container">
+            <div style="background-color: rgb(166, 194, 222);">
+                <a href="default.asp" target="_blank"> Phone </a>
         </div>
-        <div>
-            <a href="mailto:ecortez0119@gmail.com">Email</a>
+        
+        <div style="background-color: rgb(166, 194, 222);">
+            <a href="mailto:ecortez0119@gmail.com"> Email </a>
         </div>
     </footer>
 </body>
