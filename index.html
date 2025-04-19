@@ -18,7 +18,7 @@
     /*setting style for the header section*/
 header {
     flex: 1;
-    min-width: 30%;
+    width: 30%;
     background-color: rgb(68, 112, 173);
     padding: 10px;
 }
@@ -35,6 +35,10 @@ article {
 @media (max-width: 600px) {
     .layout{
         flex-direction: column;
+    }
+    header,
+    article {
+        width: 100%;
     }
 }
   
