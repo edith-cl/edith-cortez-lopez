@@ -9,17 +9,12 @@
 * {
     box-sizing: border-box;
 }
-  
-section {
-    content:"";
-    display: table;
-    display: both;
-}
     
     /*setting style for the header section*/
 nav {
     float: left;
     width: 30%;
+    height: 300px;
     background-color: rgb(68, 112, 173);
 }
 
@@ -32,9 +27,16 @@ nav ul {
 article { 
   float: left;
   width: 70%;
+  height: 300px;
   padding: 10px;
   background-color: rgb(166, 194, 222);
   }
+
+section:after {
+    content:"";
+    display: table;
+    clear: both;
+}
   
 /*this makes the menu and content sit on top of each other instead of next*/
 
