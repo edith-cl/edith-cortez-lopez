@@ -10,7 +10,7 @@
         }
 
         body {
-            margin: 1;
+            margin: 0;
             display: flex;
             flex-direction: column;
             background-color: rgb(234, 237, 237);
@@ -70,6 +70,10 @@
             grid-template-columns: 50% 50%;
         }
 
+        .blue {
+            background-color: rgb(166, 194, 222);
+        }
+
         @media (max-width: 800px) {
             body {
                 flex-direction: column;
@@ -99,7 +103,7 @@
             <p>This is the first paragraph.</p>
         </article>
 
-        <article>
+        <article class="blue">
             <div class="image-grid-container">
                 <div>
                     <a href="https://substack.com/@edithcl">
@@ -113,7 +117,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="blue">
             <div class="image-grid-container">
                 <div>
                     <a href="https://www.goodreads.com/user/show/184974709-edith-cortez-lopez">
