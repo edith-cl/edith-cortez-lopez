@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Edith Cortez Lopez</title>
-    <meta carset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Edith Cortez Lopez </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+* {
+    box-sizing: border-box;
+}
+    
+    /*setting style for the header section*/
+header {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-color: rgb(68, 112, 173);
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        article {
-            float: left;
-            padding: 20px;
-            width: 70%;
-            background-color: #f1f1f1;
-            height: 300px; /* only for demonstration, should be removed */
-        }
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
-</head>
+header ul {
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+    
+    /*setting the introduction section*/
+article { 
+  float: left;
+  width: 70%;
+  height: 300px;
+  padding: 10px;
+  background-color: rgb(166, 194, 222);
+  }
 
-<body>
-    <section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
+section:after {
+    content:"";
+    display: table;
+    clear: both;
+}
   
+/*this makes the menu and content sit on top of each other instead of next*/
+
+@media (max-width: 600px) {
+    header, article {
+        width: 100%;
+        height: auto;
+    }
+}
+  
+</style>
+</head>
+  
+<body style="background-color:rgb(234, 237, 237);">
+
+<section>
+  <header>
+    <ul>
+      <h1>Edith Cortez Lopez</h1>
+    </ul>
+  </header>
+    
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <h2> This is a heading </h2>
+    <div>
+      <p> This is a paragraph to see if the page readjustments are working. If they are not, then this will stay in one line..</p>
+      <p> This is the second paragraph.</p>
+    </div>
   </article>
 </section>
-    
+        
 </body>
 </html>
