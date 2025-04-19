@@ -8,27 +8,38 @@
 * {
     box-sizing: border-box;
 }
-
-.layout{
+.layout {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-} 
-    
-    /*setting style for the header section*/
+    align-items: flex-start; /* Align items along the cross axis */
+    justify-content: space-between; /* Adjust space between items */
+}
+
 header {
-    flex: 1;
-    width: 30%;
+    flex: 1; /* Takes 1 part of the space */
+    min-width: 30%; /* Ensures it doesn't shrink below 30% */
     background-color: rgb(68, 112, 173);
     padding: 10px;
+    color: white; /* Better readability */
 }
-    
-    /*setting the introduction section*/
-article { 
-    flex: 3;
+
+article {
+    flex: 3; /* Takes 3 parts of the space */
     background-color: rgb(166, 194, 222);
     padding: 10px;
-  }
+    min-width: 60%; /* Ensures it doesn't shrink below 60% */
+}
+
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column; /* Stack items vertically */
+    }
+    header,
+    article {
+        width: 100%; /* Full width for smaller devices */
+    }
+}
   
 /*this makes the menu and content sit on top of each other instead of next*/
 
