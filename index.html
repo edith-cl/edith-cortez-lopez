@@ -19,13 +19,15 @@
   }
   
     section {
-    -webkit-flex:3;
-    -ms-flex:3;
-    flex:3
+    display: -webkit-flex;
+    display: flex;
     }
     
     /*setting the introduction section*/
   Intro { 
+      -webkit-flex:3;
+      -ms-flex:3;
+      flex:3
       text-align: left; 
       padding: 10px;
       background-color: rgb(166, 194, 222);
@@ -42,7 +44,7 @@
       }
     }
 
-    
+  
     /*this makes the menu and content sit on top of each other instead of next*/
 
     @media (max-width:600px) {
@@ -69,7 +71,7 @@
     </div>
     </Intro>
   </section>
-  <br>
+    
     
       <div class="mycontainer">
         <div style="background-color: rgb(234, 237, 237);">
