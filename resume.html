@@ -1,1 +1,121 @@
-<iframe src="Resume.pdf" width="100%" height="600px"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Edith Cortez Lopez </title>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(234, 237, 237);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .side {
+      flex: 1 1 calc(50% - 20px); /* Each side occupies 50% of the space minus margin */
+      margin: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+      background-color: rgb(166, 194, 222);
+      border-radius: 8px;
+    }
+
+    .section {
+      background-color: white; /* White background for sections */
+      border: 1px solid #ddd; /* Light gray border */
+      border-radius: 6px;
+      margin-bottom: 20px; /* Spacing between sections */
+      padding: 15px;
+    }
+
+    .section-h2 {
+      display: flex;
+      align-items: center; /*vertical alignment*/
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .section-h2 img {
+      width: 50px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .section-h2 h2 {
+      flex-grow: 1;
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+
+    .section img.large-img{
+      width: 100%;
+      max-width: 600px;
+      height: auto ;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+    
+    .section p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(68, 112, 173);
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+    
+    a:link, a:visited {
+      background-color: transparent;
+      color: white;
+    }
+    
+    a:hover, a:active {
+      background-color: transparent;
+      color: blue;
+    }
+    
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column; /* Stacks the sides when the page expands beyond 800px */
+      }
+      .side {
+        flex: 1 1 100%; /* Each side takes full width */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side">
+      <h1>Edith Cortez Lopez</h1>
+      <h3>About Me:</h3>
+      <p>Currently holds a BBA and Master's in Accounting from Emory University. Passionate about scaling systems, teams, and ideas. I turn complex operational and data challenges into clear, actionable roadmaps, driving cross-functional execution and growth. With an inquisitive mindset and entrepreneurial spirit, I analyze situations from all angles, challenge conventional thinking, and refine insights into actionable solutions. </p>
+    </div>
+    <div class="side">
+      <div class="section">
+        <div class="section-h2">
+          <iframe src="Resume.pdf" width="100%" height="600px"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
