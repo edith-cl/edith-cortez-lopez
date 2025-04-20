@@ -1,148 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Edith Cortez Lopez</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Edith Cortez Lopez </title>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(234, 237, 237);
+    }
 
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(234, 237, 237);
-        }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        header {
-            width: 250px; /* Fixed width for the header */
-            background-color: rgb(68, 112, 173);
-            color: white;
-            padding: 10px;
-            box-sizing: border-box;
-            position: fixed;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            overflow-y: auto; /* Allow scrolling in the header if needed */
-            text-align: center;
-        }
+    .side {
+      flex: 1 1 calc(50% - 20px); /* Each side occupies 50% of the space minus margin */
+      margin: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+      background-color: rgb(166, 194, 222);
+      border-radius: 8px;
+    }
 
-        .content {
-            margin-left: 250px; /* Offset for the header */
-            padding: 20px;
-            flex: 1;
-            overflow-y: auto; /* Enable scrolling for the content */
-        }
+    .section {
+      background-color: white; /* White background for sections */
+      border: 1px solid light grey; /* Light gray border */
+      border-radius: 6px;
+      margin-bottom: 20px; /* Spacing between sections */
+      padding: 15px;
+    }
 
-        .image-grid-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-left: 10px;
-        }
+    .section-h2 {
+      display: flex;
+      align-items: center; /*vertical alignment*/
+      justify-content: flex-start;
+      margin: 0 0 10px;
+      gap: 10px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(68, 112, 173);
-        }
+    .section-h2 img {
+      width: 20%;
+      height: auto;
+      border-radious: 4px;
+      object-fit: cover;
+    }
 
-        a:link, a:visited {
-            background-color: transparent;
-            color: white;
-        }
+    .section-h2 h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: left;
+    }
 
-        a:hover, a:active {
-            background-color: transparent;
-            color: blue;
-        }
-
-        img {
-            width: auto;
-            height: 50px;
-            object-fit: cover;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-
-        .blue {
-            background-color: rgb(166, 194, 222);
-        }
-
-        @media (max-width: 800px) {
-            body {
-                flex-direction: column;
-                overflow: auto; /* Allow body scrolling on smaller devices */
-            }
-
-            header {
-                position: static; /* Remove fixed positioning */
-                width: 100%;
-                height: auto;
-            }
-
-            .content {
-                margin-left: 0;
-            }
-        }
-    </style>
+    .section img.large-img{
+      width: 100%;
+      max-width: 600px;
+      height: auto ;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+    
+    .section p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(68, 112, 173);
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    
+    a:link, a:visited {
+      background-color: transparent;
+      color: white;
+    }
+    
+    a:hover, a:active {
+      background-color: transparent;
+      color: blue;
+    }
+    
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column; /* Stacks the sides when the page expands beyond 800px */
+      }
+      .side {
+        flex: 1 1 100%; /* Each side takes full width */
+      }
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Edith Cortez Lopez</h1>
-    </header>
-    
-    <div class="content">
-<br>
-        <br>
-        <article class="blue">
-            <div class="image-grid-container">
-                <div>
-                    <a href="https://substack.com/@edithcl">
-                        <img src="substack.png" alt="Substack">
-                    </a>
-                </div>
-                <div>
-                    <h2>Substack</h2>
-                    <p>What started as a way for me to gather my thoughts on the morning news is slowly evolving into independent research on policy, industry, and markets. These pieces of work are laying the foundation for a future research paper.</p>
-                </div>
-            </div>
-        </article>
-<br>
-<br>
-        <article class="blue">
-            <div class="image-grid-container">
-                <div>
-                    <a href="https://www.goodreads.com/user/show/184974709-edith-cortez-lopez">
-                        <img src="IMG_2328.PNG" alt="Goodreads">
-                    </a>
-                </div>
-                <div>
-                    <h2>Goodreads</h2>
-                    <p>Aside from reading the Wall Street Journal and staying current with the news, I love immersing myself in the written works of others, whether fiction or non-fiction, as a way to expand my perspective.</p>
-                </div>
-            </div>
-        </article>
-    </div>
 
-<br>
-<br>
-    
+<body>
+  <div class="container">
+    <div class="side">
+      <h1>Edith Cortez Lopez</h1>
+      <h3>About Me:</h3>
+      <p>Currently hold a BBA and Master's in Accounting from Emory University. Passionate about scaling systems, teams, and ideas. I turn complex operational and data challenges into clear, actionable roadmaps, driving cross-functional execution and growth. With an inquisitive mindset and entrepreneurial spirit, I analyze situations from all angles, challenge conventional thinking, and refine insights into actionable solutions. </p>
+    </div>
+    <div class="side">
+      <div class="section">
+        <div class="section-h2">
+            <a href="https://substack.com/@edithcl">
+              <img src="substack.png" alt="Substack">
+            </a>
+        <h2>Substack</h2>
+        </div>
+        <p>What started as a way for me to gather my thoughts on the morning news is slowly evolving into independent research on policy, industry, and markets. These pieces of work are laying the foundation for a future research paper.</p>
+      </div>
+      <div class="section">
+        <div class="section-h2">
+            <a href="https://www.goodreads.com/user/show/184974709-edith-cortez-lopez">
+              <img src="IMG_2328.PNG" alt="Goodreads">
+            </a>
+        <h2>Goodreads</h2>
+        </div>
+        <p>Aside from reading the Wall Street Journal and staying current with the news, I love immersing myself in the written works of others, whether fiction or non-fiction, as a way to expand my perspective.</p>
+      </div>
+      <div class="section">
+          <a href="https://defense-technology-industry-ecl.my.canva.site">
+            <img class="large-img" src="defense.png" alt="Defense Market Research">
+          </a>
+        <p>Case Study of The New Defense Industry</p>
+      </div>
+    </div>
+  </div>
     <footer>
         <div class="grid-container">
-            <div>
-                <a href="index.html"> About Me </a>
+        <div>
+          <a href="index.html"> About Me </a>
         </div>
         <div>
-             <a href="projects.html"> Projects </a>
+          <a href="projects.html"> Projects </a>
         </div>
-    </footer>
+        </div>
+      </footer>
+    </div>
 </body>
 </html>
