@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edith Cortez Lopez</title>
+  <style>
+    /* General container styling */
+    .container {
+      display: flex;
+      flex-direction: row; /* Place containers side by side */
+      gap: 16px; /* Add space between containers */
+      width: 100%; /* Ensure the container spans full width */
+    }
 
+    .box {
+      flex: 1; /* Make both boxes take up equal width */
+      padding: 16px;
+      background-color: rgb(234, 237, 237);
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .right-box {
+      max-height: 400px; /* Set a maximum height for the right container */
+      overflow-y: auto; /* Enable vertical scrolling for the right container */
+    }
+
+    .section {
+      margin: 16px 0; /* Add some space between sections */
+      padding: 16px;
+      background-color: rgb(166, 194, 222)
+      border: 1px solid #aaa;
+    }
+
+    .section h3 {
+      margin: 0 0 8px; /* Add some spacing below the title */
+      font-size: 18px;
+      background-color: rgb(166, 194, 222)
+    }
+
+    .section p {
+      margin: 0;
+      font-size: 14px;
+      background-color: rgb(166, 194, 222)
+    }
+
+    /* Stack the containers on smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* Stack containers vertically */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="section">
+        <h3>Title 1 in Left Container</h3>
+        <p>This is a paragraph describing the first section in the left container. This container has less content.</p>
+      </div>
+      <div class="section">
+        <h3>Title 2 in Left Container</h3>
+        <p>This is another paragraph in the left container. The left container remains static.</p>
+      </div>
+    </div>
+    <div class="box right-box">
+      <div class="section">
+        <h3>Title 1 in Right Container</h3>
+        <p>This is a paragraph describing the first section in the right container.</p>
+      </div>
+      <div class="section">
+        <h3>Title 2 in Right Container</h3>
+        <p>This is a paragraph describing the second section in the right container. Adding more content for scrolling behavior.</p>
+      </div>
+      <div class="section">
+        <h3>Title 3 in Right Container</h3>
+        <p>This is a paragraph describing the third section in the right container. More text for testing scrolling.</p>
+      </div>
+      <div class="section">
+        <h3>Title 4 in Right Container</h3>
+        <p>This is a paragraph describing the fourth section in the right container. Adding more content to demonstrate scrolling.</p>
+      </div>
+      <div class="section">
+        <h3>Title 5 in Right Container</h3>
+        <p>This is a paragraph describing the fifth section in the right container. Scroll down to view more content.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
